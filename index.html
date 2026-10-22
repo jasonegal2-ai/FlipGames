@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>FlipGames – PC Games</title>
+<link rel="stylesheet" href="style.css">
+</head>
+<body>
+<header>
+  <div class="logo"><span>FLIP</span>GAMES</div>
+  <nav>
+    <a href="#home">Start</a>
+    <a href="#games">Spiele</a>
+    <a href="#categories">Kategorien</a>
+  </nav>
+  <button class="search-btn" onclick="focusSearch()">🔎</button>
+</header>
+<main id="home">
+<section class="hero"><div><p class="eyebrow">DEINE PC-GAMING-PLATTFORM</p><h1>PLAY. <span>FLIP.</span> REPEAT.</h1><p class="hero-text">Entdecke deine nächsten Lieblingsspiele auf FlipGames.</p><a class="primary" href="#games">Spiele entdecken</a></div></section>
+<section class="section" id="games"><div class="section-head"><div><p class="eyebrow">ENTDECKEN</p><h2>PC-Spiele</h2></div><input id="search" type="search" placeholder="Spiel suchen..." oninput="renderGames()"></div><div class="chips" id="categories"></div><div class="grid" id="gameGrid"></div></section>
+</main>
+<div class="modal" id="modal" onclick="closeModal(event)"><div class="modal-card"><button class="close" onclick="closeModal()">×</button><img id="modalImg" alt=""><div class="modal-content"><p class="eyebrow" id="modalCategory"></p><h2 id="modalTitle"></h2><p id="modalDescription"></p><div class="tags" id="modalTags"></div><button class="primary" onclick="alert('Hier kannst du später deinen offiziellen Spiele-Link hinterlegen.')">Spiel öffnen</button></div></div></div>
+<footer><div class="logo"><span>FLIP</span>GAMES</div><p>© 2026 FlipGames · Deine PC-Gaming-Plattform</p></footer>
+<script src="script.js"></script>
+</body>
+</html>
